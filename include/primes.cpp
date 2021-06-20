@@ -28,9 +28,7 @@ int primes_generator::next()
             this->cross_next(prime_sq - 4 * current_prime, 6 * current_prime);
         } else if (current_prime % 6 == 1) {
             this->cross_next(prime_sq - 2 * current_prime, 6 * current_prime);
-        } else {
-            std::cout << "This path should never happen" << std::endl;
-        }
+        } 
 
         this->increase_next_prime();
         return current_prime;
